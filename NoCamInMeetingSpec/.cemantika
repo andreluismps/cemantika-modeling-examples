@@ -1,0 +1,7 @@
+#Cemantika file
+#Mon Nov 30 00:31:20 GMT-03:00 2015
+USE_CASE_DIAGRAM=NoCamInMeetingSpec/src/context/model/usecase/noCamInMeeting.umlusc
+USE_CASE_MODEL=NoCamInMeetingSpec/src/context/model/usecase/noCamInMeeting.uml
+CONCEPTUAL_DIAGRAM=NoCamInMeetingSpec/src/context/model/conceptual/noCamInMeeting.umlclass
+CONTEXT_KNOWLEDGE_TEST_BASE=/Users/andreluismps/Documents/base2.cktb
+CONCEPTUAL_MODEL=NoCamInMeetingSpec/src/context/model/conceptual/noCamInMeeting.uml

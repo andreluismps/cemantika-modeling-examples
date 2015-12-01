@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_x7U2QCmmEeWdoeJiXYcnTQ">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_x7U2QSmmEeWdoeJiXYcnTQ" name="Meeting">
+    <node xmi:type="uml:InitialNode" xmi:id="_x7U2QimmEeWdoeJiXYcnTQ" name="Inicio" outgoing="_x7U2SSmmEeWdoeJiXYcnTQ"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_x7U2QymmEeWdoeJiXYcnTQ" name="Fim" incoming="_x7U2TimmEeWdoeJiXYcnTQ"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_x7U2RCmmEeWdoeJiXYcnTQ" name="Decide time appointment" outgoing="_x7U2SimmEeWdoeJiXYcnTQ _x7U2SymmEeWdoeJiXYcnTQ" incoming="_x7U2SSmmEeWdoeJiXYcnTQ"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_x7U2RimmEeWdoeJiXYcnTQ" name="Funcao" outgoing="_x7U2TimmEeWdoeJiXYcnTQ" incoming="_x7U2TCmmEeWdoeJiXYcnTQ _x7U2TSmmEeWdoeJiXYcnTQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_x7U2RymmEeWdoeJiXYcnTQ" name="Turn camera unavailable" outgoing="_x7U2TCmmEeWdoeJiXYcnTQ" incoming="_PvNDsDATEeW3EOtVLHr9sQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_x7U2SCmmEeWdoeJiXYcnTQ" name="Turn camera available" outgoing="_x7U2TSmmEeWdoeJiXYcnTQ" incoming="_GMrIEDAUEeW3EOtVLHr9sQ"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_Mq724TASEeW3EOtVLHr9sQ" name="Decide Location" outgoing="_Ih8LwDATEeW3EOtVLHr9sQ _PvNDsDATEeW3EOtVLHr9sQ" incoming="_HXBQwDATEeW3EOtVLHr9sQ"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_QduzEDASEeW3EOtVLHr9sQ" name="Decide wifi SSID" outgoing="_HXBQwDATEeW3EOtVLHr9sQ _EgsHYDAUEeW3EOtVLHr9sQ" incoming="_x7U2SymmEeWdoeJiXYcnTQ"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_97cuMDASEeW3EOtVLHr9sQ" name="Join" outgoing="_GMrIEDAUEeW3EOtVLHr9sQ" incoming="_Ih8LwDATEeW3EOtVLHr9sQ _x7U2SimmEeWdoeJiXYcnTQ _EgsHYDAUEeW3EOtVLHr9sQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_x7U2SSmmEeWdoeJiXYcnTQ" name="" source="_x7U2QimmEeWdoeJiXYcnTQ" target="_x7U2RCmmEeWdoeJiXYcnTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_x7U2SimmEeWdoeJiXYcnTQ" name="User time is not betweeen appointment begin/end" source="_x7U2RCmmEeWdoeJiXYcnTQ" target="_97cuMDASEeW3EOtVLHr9sQ">
+      <nameExpression xmi:id="_x7U2RSmmEeWdoeJiXYcnTQ" name="sensors" symbol="appointment"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_x7U2SymmEeWdoeJiXYcnTQ" name="User time is betweeen appointment begin/end" source="_x7U2RCmmEeWdoeJiXYcnTQ" target="_QduzEDASEeW3EOtVLHr9sQ">
+      <nameExpression xmi:id="_p3q4kC4qEeWKQYi-AEJ35g" name="sensors" symbol="appointment"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_x7U2TCmmEeWdoeJiXYcnTQ" name="" source="_x7U2RymmEeWdoeJiXYcnTQ" target="_x7U2RimmEeWdoeJiXYcnTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_x7U2TSmmEeWdoeJiXYcnTQ" name="" source="_x7U2SCmmEeWdoeJiXYcnTQ" target="_x7U2RimmEeWdoeJiXYcnTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_x7U2TimmEeWdoeJiXYcnTQ" name="" source="_x7U2RimmEeWdoeJiXYcnTQ" target="_x7U2QymmEeWdoeJiXYcnTQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_HXBQwDATEeW3EOtVLHr9sQ" name="SSID of meeting room detected" source="_QduzEDASEeW3EOtVLHr9sQ" target="_Mq724TASEeW3EOtVLHr9sQ">
+      <nameExpression xmi:id="_RzGRQDAXEeW3EOtVLHr9sQ" name="sensors" symbol="wifi"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Ih8LwDATEeW3EOtVLHr9sQ" name="GPS data not indicate meeting site" source="_Mq724TASEeW3EOtVLHr9sQ" target="_97cuMDASEeW3EOtVLHr9sQ">
+      <nameExpression xmi:id="_cbgaYDAXEeW3EOtVLHr9sQ" name="sensors" symbol="GPS"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PvNDsDATEeW3EOtVLHr9sQ" name="GPS data indicate meeting site" source="_Mq724TASEeW3EOtVLHr9sQ" target="_x7U2RymmEeWdoeJiXYcnTQ">
+      <nameExpression xmi:id="_ZkOEMDAXEeW3EOtVLHr9sQ" name="sensors" symbol="GPS"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_EgsHYDAUEeW3EOtVLHr9sQ" name="SSID of meeting room not detected" source="_QduzEDASEeW3EOtVLHr9sQ" target="_97cuMDASEeW3EOtVLHr9sQ">
+      <nameExpression xmi:id="_T03UsDAXEeW3EOtVLHr9sQ" name="sensors" symbol="wifi"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_GMrIEDAUEeW3EOtVLHr9sQ" source="_97cuMDASEeW3EOtVLHr9sQ" target="_x7U2SCmmEeWdoeJiXYcnTQ"/>
+  </packagedElement>
+</uml:Package>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<scenario name="Scenario #1">
+    <situation name="Situation #1">
+        <logicalContext name="SSID of meeting room detected">
+            <sensor>WiFi</sensor>
+        </logicalContext>
+        <logicalContext name="user time is betweeen appointment begin/end">
+            <sensor>Calendar</sensor>
+        </logicalContext>
+        <logicalContext name="GPS data not indicate meeting site">
+            <sensor>GPS</sensor>
+        </logicalContext>
+    </situation>
+    <situation name="Situation #2">
+        <logicalContext name="SSID of meeting room detected">
+            <sensor>WiFi</sensor>
+        </logicalContext>
+        <logicalContext name="user time is betweeen appointment begin/end">
+            <sensor>Calendar</sensor>
+        </logicalContext>
+        <logicalContext name="GPS data indicate meeting site">
+            <sensor>GPS</sensor>
+        </logicalContext>
+    </situation>
+    <situation name="Situation #3">
+        <logicalContext name="SSID of meeting room detected">
+            <sensor>WiFi</sensor>
+        </logicalContext>
+        <logicalContext name="User time is not betweeen appointment begin/end">
+            <sensor>Calendar</sensor>
+        </logicalContext>
+    </situation>
+    <situation name="Situation #4">
+        <logicalContext name="SSID of meeting room not detected">
+            <sensor>WiFi</sensor>
+        </logicalContext>
+    </situation>
+</scenario>

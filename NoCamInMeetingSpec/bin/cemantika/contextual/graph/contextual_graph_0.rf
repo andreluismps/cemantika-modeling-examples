@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<process xmlns="http://drools.org/drools-5.0/process"
+         xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+         xs:schemaLocation="http://drools.org/drools-5.0/process drools-processes-5.0.xsd"
+         type="RuleFlow" name="contextual_graph_0" id="contextual_graph_0" package-name="cemantika.contextual.graph" routerLayout="2" >
+
+  <header>
+    <variables>
+      <variable name="meeting" >
+        <type name="org.drools.process.core.datatype.impl.type.ObjectDataType" className="Meeting" />
+      </variable>
+      <variable name="user" >
+        <type name="org.drools.process.core.datatype.impl.type.ObjectDataType" className="User" />
+      </variable>
+    </variables>
+  </header>
+
+  <nodes>
+    <join id="16" name="Join" x="909" y="177" width="32" height="32" type="2" />
+    <start id="1" name="Start" x="44" y="279" width="80" height="40" />
+    <split id="2" name="Split" x="175" y="284" width="80" height="40" type="2" >
+      <constraints>
+        <constraint toNodeId="7" toType="DROOLS_DEFAULT" name="SSID of meeting room not detected" priority="1" type="rule" dialect="mvel" >return !user.getCurrentSSID().equals("Meeting Room");</constraint>
+        <constraint toNodeId="3" toType="DROOLS_DEFAULT" name="SSID of meeting room detected" priority="1" type="code" dialect="java" >return user.getCurrentSSID().equals("Meeting Room");</constraint>
+      </constraints>
+    </split>
+    <split id="3" name="Split" x="266" y="177" width="179" height="40" type="2" >
+      <constraints>
+        <constraint toNodeId="14" toType="DROOLS_DEFAULT" name="user time is not betweeen appointment begin/end" priority="1" type="rule" dialect="mvel" >return !meeting.isOccurring(meeting.getMeetingAppointment());</constraint>
+        <constraint toNodeId="4" toType="DROOLS_DEFAULT" name="user time is betweeen appointment begin/end" priority="1" type="code" dialect="java" >return meeting.isOccurring(meeting.getMeetingAppointment());</constraint>
+      </constraints>
+    </split>
+    <split id="4" name="Split" x="377" y="73" width="32" height="32" type="2" >
+      <constraints>
+        <constraint toNodeId="13" toType="DROOLS_DEFAULT" name="GPS data do not indicate meeting site" priority="1" type="rule" dialect="mvel" >return !user.getCurrentLocation().equals(meeting.getMeetingLocation());</constraint>
+        <constraint toNodeId="6" toType="DROOLS_DEFAULT" name="GPS data indicate meeting site" priority="1" type="code" dialect="java" >return user.getCurrentLocation().equals(meeting.getMeetingLocation());</constraint>
+      </constraints>
+    </split>
+    <actionNode id="6" name="Turn camera unavailable" x="515" y="16" width="179" height="48" >
+        <action type="expression" dialect="java" >System.out.println("Camera unavailable");</action>
+    </actionNode>
+    <actionNode id="7" name="Turn camera available" x="526" y="381" width="156" height="48" >
+        <action type="expression" dialect="mvel" >System.out.println("Camera available");</action>
+    </actionNode>
+    <join id="8" name="Join" x="991" y="284" width="80" height="40" type="2" />
+    <end id="9" name="End" x="1055" y="279" width="80" height="40" />
+    <actionNode id="13" name="Turn camera available" x="527" y="111" width="155" height="48" >
+        <action type="expression" dialect="mvel" >System.out.println("Camera available");</action>
+    </actionNode>
+    <actionNode id="14" name="Turn camera available" x="527" y="272" width="155" height="48" >
+        <action type="expression" dialect="mvel" >System.out.println("Camera available");</action>
+    </actionNode>
+    <join id="15" name="Join" x="809" y="73" width="32" height="32" type="2" />
+  </nodes>
+
+  <connections>
+    <connection from="14" to="16" bendpoints="[871,296]" />
+    <connection from="15" to="16" bendpoints="[877,88]" />
+    <connection from="1" to="2" />
+    <connection from="2" to="3" bendpoints="[232,192]" />
+    <connection from="3" to="4" bendpoints="[335,89]" />
+    <connection from="4" to="6" bendpoints="[424,40]" />
+    <connection from="2" to="7" bendpoints="[234,405]" />
+    <connection from="7" to="8" bendpoints="[968,404]" />
+    <connection from="16" to="8" bendpoints="[974,192]" />
+    <connection from="8" to="9" />
+    <connection from="4" to="13" bendpoints="[418,134]" />
+    <connection from="3" to="14" bendpoints="[333,295]" />
+    <connection from="6" to="15" bendpoints="[784,40]" />
+    <connection from="13" to="15" bendpoints="[788,134]" />
+  </connections>
+
+</process>

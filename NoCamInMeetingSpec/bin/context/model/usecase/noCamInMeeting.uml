@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:contextprofile="http:///schemas/contextprofile/_i-XPMIBaEd-gTtsROGlwpw/23" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/contextprofile/_i-XPMIBaEd-gTtsROGlwpw/23 platform:/plugin/org.cemantika.modeling/profile/cemantika.profile.uml#_i-X2QIBaEd-gTtsROGlwpw">
+  <uml:Package xmi:id="_-7SHUP49EeSnItpYYupygQ" name="noCamInMeeting">
+    <elementImport xmi:id="_-8irkP49EeSnItpYYupygQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_-8m9AP49EeSnItpYYupygQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <elementImport xmi:id="_-8m9Af49EeSnItpYYupygQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+    </elementImport>
+    <elementImport xmi:id="_-8m9Av49EeSnItpYYupygQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_wpjRoP4-EeSnItpYYupygQ" name="User"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ydR5EP4-EeSnItpYYupygQ" name="Participes of meeting"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_DRJe4P4_EeSnItpYYupygQ" memberEnd="_DRKtAP4_EeSnItpYYupygQ _DRMiMf4_EeSnItpYYupygQ" navigableOwnedEnd="_DRMiMf4_EeSnItpYYupygQ">
+      <ownedEnd xmi:id="_DRKtAP4_EeSnItpYYupygQ" name="src" type="_wpjRoP4-EeSnItpYYupygQ" association="_DRJe4P4_EeSnItpYYupygQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DRMiMP4_EeSnItpYYupygQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DRL7IP4_EeSnItpYYupygQ" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_DRMiMf4_EeSnItpYYupygQ" name="dst" type="_ydR5EP4-EeSnItpYYupygQ" association="_DRJe4P4_EeSnItpYYupygQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DRNJQP4_EeSnItpYYupygQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DRMiMv4_EeSnItpYYupygQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <profileApplication xmi:id="_1L6XoP5AEeSnItpYYupygQ">
+      <eAnnotations xmi:id="_1L9a8P5AEeSnItpYYupygQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/org.cemantika.modeling/profile/cemantika.profile.uml#_i-X2QIBaEd-gTtsROGlwpw"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/org.cemantika.modeling/profile/cemantika.profile.uml#___5MUHrWEd-kYqRtMf-K-Q"/>
+    </profileApplication>
+  </uml:Package>
+  <contextprofile:Agent xmi:id="_2QFxcP5AEeSnItpYYupygQ" base_Actor="_wpjRoP4-EeSnItpYYupygQ"/>
+  <contextprofile:Task xmi:id="_3zFOMP5AEeSnItpYYupygQ" base_UseCase="_ydR5EP4-EeSnItpYYupygQ"/>
+  <contextprofile:executes xmi:id="_29itUP5AEeSnItpYYupygQ" base_Association="_DRJe4P4_EeSnItpYYupygQ" behavior="The application &quot;NoCamInMeeting&quot; interprets four context sources to identify if the user is currently attending a meeting. Besides the Wi-Fi signal of the meeting room, a calendar appointment and the current time, the GPS signal is also considered. These characterize the meeting context data.&#xA;If the user's context information matches the meeting context, the device camera feature is blocked."/>
+</xmi:XMI>

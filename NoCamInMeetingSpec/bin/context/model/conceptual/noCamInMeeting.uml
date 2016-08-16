@@ -175,7 +175,6 @@
   <cemantika_class:ContextSource xmi:id="_IWZtgCjpEeWHC-6Fq80apg" base_Class="_gIcgACjhEeWHC-6Fq80apg"/>
   <cemantika_class:ContextSourceAPI xmi:id="_I9BBkCjpEeWHC-6Fq80apg" base_Class="_geir0CjhEeWHC-6Fq80apg">
     <sensors>GPS</sensors>
-    <sensors>CellID</sensors>
   </cemantika_class:ContextSourceAPI>
   <cemantika_class:ContextSourceAPI xmi:id="_KVTDICjpEeWHC-6Fq80apg" base_Class="_hRLpsCjhEeWHC-6Fq80apg">
     <sensors>WiFi</sensors>

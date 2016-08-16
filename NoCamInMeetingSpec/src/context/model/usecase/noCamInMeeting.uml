@@ -34,5 +34,5 @@
   </uml:Package>
   <contextprofile:Agent xmi:id="_2QFxcP5AEeSnItpYYupygQ" base_Actor="_wpjRoP4-EeSnItpYYupygQ"/>
   <contextprofile:Task xmi:id="_3zFOMP5AEeSnItpYYupygQ" base_UseCase="_ydR5EP4-EeSnItpYYupygQ"/>
-  <contextprofile:executes xmi:id="_29itUP5AEeSnItpYYupygQ" base_Association="_DRJe4P4_EeSnItpYYupygQ" behavior="The application &quot;NoCamInMeeting&quot; interprets four context sources to identify if the user is currently attending a meeting. Besides the Wi-Fi signal of the meeting room, a calendar appointment and the current time, the GPS signal is also considered. These characterize the meeting context data.&#xA;If the user's context information matches the meeting context, the device camera feature is blocked."/>
+  <contextprofile:executes xmi:id="_29itUP5AEeSnItpYYupygQ" base_Association="_DRJe4P4_EeSnItpYYupygQ" behavior="The application &quot;NoCamInMeeting&quot; interprets four context sources to identify if the user is currently attending a meeting. &#xA;&#xA;Besides the Wi-Fi signal of the meeting room, a calendar appointment and the current time, the GPS signal is also considered. &#xA;These characterize the meeting context data.&#xA;&#xA;If the user's context information matches the meeting context, the device camera feature is blocked."/>
 </xmi:XMI>

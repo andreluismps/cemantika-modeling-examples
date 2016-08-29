@@ -1,0 +1,7 @@
+#Cemantika file
+#Sun Aug 28 23:52:49 GMT-03:00 2016
+USE_CASE_DIAGRAM=PersonalUploadManagerSpec/src/com/example/personaluploadmanager/model/usecase/retrieveHomeStatus.umlusc
+USE_CASE_MODEL=PersonalUploadManagerSpec/src/com/example/personaluploadmanager/model/usecase/retrieveHomeStatus.uml
+CONCEPTUAL_DIAGRAM=PersonalUploadManagerSpec/src/com/example/personaluploadmanager/model/conceptual/classDiagram.umlclass
+CONTEXT_KNOWLEDGE_TEST_BASE=/Users/andreluismps/Dropbox/MATD75-Andre_Luis_Monteiro/CKTB/PersonalUploadManagerSpec.cktb
+CONCEPTUAL_MODEL=PersonalUploadManagerSpec/src/com/example/personaluploadmanager/model/conceptual/classDiagram.uml

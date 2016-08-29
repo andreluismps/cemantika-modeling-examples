@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmlns:uml2tools.notation="http://www.eclipse.org/mdt/uml2tools/gmf/notation/ext/2008" xmi:id="_Tq2-8G2LEeaa7-DhJvnU5w" type="UMLUseCase" name="retrieveHomeStatus.umlusc" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_UfgH8G2LEeaa7-DhJvnU5w" type="2001" fontName=".Helvetica Neue DeskInterface">
+    <children xmi:type="notation:DecorationNode" xmi:id="_UfjyUG2LEeaa7-DhJvnU5w" type="5001"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_UfkZYG2LEeaa7-DhJvnU5w" type="5016"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_Ufs8QG2LEeaa7-DhJvnU5w" type="7001" collapsed="true">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_Ufs8QW2LEeaa7-DhJvnU5w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_Ufs8Qm2LEeaa7-DhJvnU5w"/>
+      <styles xmi:type="notation:CanonicalStyle" xmi:id="_UftjUG2LEeaa7-DhJvnU5w"/>
+    </children>
+    <element xmi:type="uml:Package" href="retrieveHomeStatus.uml#_TpBL4G2LEeaa7-DhJvnU5w"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UfgH8W2LEeaa7-DhJvnU5w"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_Ve9Z0G2LEeaa7-DhJvnU5w" type="2002" fontName=".Helvetica Neue DeskInterface">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Ve9Z0m2LEeaa7-DhJvnU5w" type="5002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Ve-A4G2LEeaa7-DhJvnU5w" y="5"/>
+    </children>
+    <element xmi:type="uml:Actor" href="retrieveHomeStatus.uml#_Vchw4G2LEeaa7-DhJvnU5w"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Ve9Z0W2LEeaa7-DhJvnU5w" x="293" y="169"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_ZIjWsG2LEeaa7-DhJvnU5w" type="2003" fontName=".Helvetica Neue DeskInterface">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ZIj9wG2LEeaa7-DhJvnU5w" type="5003">
+      <styles xmi:type="notation:FontStyle" xmi:id="_ZIwLAG2LEeaa7-DhJvnU5w" bold="true"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_ZIkk0G2LEeaa7-DhJvnU5w" type="7002">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_ZIkk0W2LEeaa7-DhJvnU5w" showTitle="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_ZIkk0m2LEeaa7-DhJvnU5w"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_ZIkk022LEeaa7-DhJvnU5w"/>
+      <styles xmi:type="notation:CanonicalStyle" xmi:id="_ZIkk1G2LEeaa7-DhJvnU5w"/>
+    </children>
+    <element xmi:type="uml:UseCase" href="retrieveHomeStatus.uml#_ZIJuEG2LEeaa7-DhJvnU5w"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZIjWsW2LEeaa7-DhJvnU5w" x="508" y="172"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_Tq2-8W2LEeaa7-DhJvnU5w"/>
+  <styles xmi:type="uml2tools.notation:U2TDiagramCanonicalStyle" xmi:id="_Tq2-8m2LEeaa7-DhJvnU5w"/>
+  <element xmi:type="uml:Package" href="retrieveHomeStatus.uml#_TpBL4G2LEeaa7-DhJvnU5w"/>
+  <edges xmi:type="notation:Edge" xmi:id="_dx-_8G2LEeaa7-DhJvnU5w" type="4004" source="_Ve9Z0G2LEeaa7-DhJvnU5w" target="_ZIjWsG2LEeaa7-DhJvnU5w">
+    <children xmi:type="notation:DecorationNode" xmi:id="_dx_nA22LEeaa7-DhJvnU5w" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_dx_nBG2LEeaa7-DhJvnU5w" y="15"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_dx_nBW2LEeaa7-DhJvnU5w" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_dx_nBm2LEeaa7-DhJvnU5w" y="15"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_dx_nAG2LEeaa7-DhJvnU5w"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_dx_nAW2LEeaa7-DhJvnU5w" fontName=".Helvetica Neue DeskInterface"/>
+    <element xmi:type="uml:Association" href="retrieveHomeStatus.uml#_dxvvYG2LEeaa7-DhJvnU5w"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_dx_nAm2LEeaa7-DhJvnU5w" points="[30, -2, -209, 0]$[215, -2, -24, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_dylc4G2LEeaa7-DhJvnU5w" id="(0.0,0.7)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_dymD8G2LEeaa7-DhJvnU5w" id="(0.14285714285714285,0.5)"/>
+  </edges>
+</notation:Diagram>

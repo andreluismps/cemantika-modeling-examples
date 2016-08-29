@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<process xmlns="http://drools.org/drools-5.0/process"
+         xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+         xs:schemaLocation="http://drools.org/drools-5.0/process drools-processes-5.0.xsd"
+         type="RuleFlow" name="contextual_graph_0" id="contextual_graph_0" package-name="cemantika.contextual.graph" routerLayout="2" >
+
+  <header>
+    <variables>
+      <variable name="user" >
+        <type name="org.drools.process.core.datatype.impl.type.ObjectDataType" className="User" />
+      </variable>
+    </variables>
+  </header>
+
+  <nodes>
+    <join id="16" name="Join" x="705" y="178" width="32" height="32" type="2" />
+    <start id="1" name="Start" x="44" y="279" width="80" height="40" />
+    <split id="2" name="Split" x="175" y="284" width="80" height="40" type="2" >
+      <constraints>
+        <constraint toNodeId="7" toType="DROOLS_DEFAULT" name="User home network NOT detected" priority="1" type="rule" dialect="mvel" >return !user.getCurrentSSID().equals("Home");</constraint>
+        <constraint toNodeId="4" toType="DROOLS_DEFAULT" name="User home network detected" priority="1" type="rule" dialect="mvel" >return user.getCurrentSSID().equals("Home");</constraint>
+      </constraints>
+    </split>
+    <split id="4" name="Split" x="296" y="178" width="32" height="32" type="2" >
+      <constraints>
+        <constraint toNodeId="13" toType="DROOLS_DEFAULT" name="User is not at home" priority="1" type="rule" dialect="mvel" >return !user.getCurrentLocation().equals("Home");</constraint>
+        <constraint toNodeId="6" toType="DROOLS_DEFAULT" name="User is at home" priority="1" type="code" dialect="java" >return user.getCurrentLocation().equals("Home");</constraint>
+      </constraints>
+    </split>
+    <actionNode id="6" name="Turn file upload available" x="431" y="55" width="179" height="48" >
+        <action type="expression" dialect="java" >System.out.println("Upload available");</action>
+    </actionNode>
+    <actionNode id="7" name="Turn file upload unavailable" x="426" y="380" width="188" height="48" >
+        <action type="expression" dialect="mvel" >System.out.println("File upload unavailable");</action>
+    </actionNode>
+    <join id="8" name="Join" x="787" y="285" width="80" height="40" type="2" />
+    <end id="9" name="End" x="851" y="280" width="80" height="40" />
+    <actionNode id="13" name="Turn file upload unavailable" x="427" y="277" width="187" height="48" >
+        <action type="expression" dialect="mvel" >System.out.println("File upload unavailable");</action>
+    </actionNode>
+  </nodes>
+
+  <connections>
+    <connection from="6" to="16" bendpoints="[659,80]" />
+    <connection from="13" to="16" bendpoints="[663,298]" />
+    <connection from="1" to="2" />
+    <connection from="2" to="4" bendpoints="[235,193]" />
+    <connection from="4" to="6" bendpoints="[369,79]" />
+    <connection from="2" to="7" bendpoints="[234,405]" />
+    <connection from="7" to="8" bendpoints="[754,401]" />
+    <connection from="16" to="8" bendpoints="[768,194]" />
+    <connection from="8" to="9" />
+    <connection from="4" to="13" bendpoints="[370,301]" />
+  </connections>
+
+</process>

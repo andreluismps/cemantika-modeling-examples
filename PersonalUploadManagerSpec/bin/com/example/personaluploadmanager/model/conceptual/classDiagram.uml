@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cemantika_class="http:///schemas/cemantika_class/_LD3T4IRKEd-lb5eO5RIlaQ/13" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/cemantika_class/_LD3T4IRKEd-lb5eO5RIlaQ/13 platform:/plugin/org.cemantika.modeling/profile/cemantika_class.profile.uml#_LD3T4YRKEd-lb5eO5RIlaQ">
+  <uml:Package xmi:id="_lOjfMG2LEeaa7-DhJvnU5w" name="classDiagram">
+    <elementImport xmi:id="_lPLKQG2LEeaa7-DhJvnU5w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_lPLKQW2LEeaa7-DhJvnU5w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <elementImport xmi:id="_lPLKQm2LEeaa7-DhJvnU5w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+    </elementImport>
+    <elementImport xmi:id="_lPLKQ22LEeaa7-DhJvnU5w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_mq6IcG2LEeaa7-DhJvnU5w" name="User">
+      <ownedAttribute xmi:id="_cnK9MG2MEeaa7-DhJvnU5w" name="currentSSID" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_n6v_sG2LEeaa7-DhJvnU5w" name="Location">
+      <ownedAttribute xmi:id="_t4svYG2MEeaa7-DhJvnU5w" name="latitude" aggregation="composite"/>
+      <ownedAttribute xmi:id="_vhnN8G2MEeaa7-DhJvnU5w" name="longitude" aggregation="composite"/>
+      <ownedAttribute xmi:id="_Di6m0G2SEeaa7-DhJvnU5w" name="name" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Oc1lcG2MEeaa7-DhJvnU5w" name="" memberEnd="_Oc2zkG2MEeaa7-DhJvnU5w _Oc3aoW2MEeaa7-DhJvnU5w">
+      <ownedEnd xmi:id="_Oc2zkG2MEeaa7-DhJvnU5w" name="src" type="_mq6IcG2LEeaa7-DhJvnU5w" association="_Oc1lcG2MEeaa7-DhJvnU5w">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Oc3aoG2MEeaa7-DhJvnU5w" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Oc2zkW2MEeaa7-DhJvnU5w" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_Oc3aoW2MEeaa7-DhJvnU5w" name="currentLocation" type="_n6v_sG2LEeaa7-DhJvnU5w" association="_Oc1lcG2MEeaa7-DhJvnU5w">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Oc3ao22MEeaa7-DhJvnU5w" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Oc3aom2MEeaa7-DhJvnU5w" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_a9OVIG2SEeaa7-DhJvnU5w" name="GeoLocationAdapter"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_guoTEG2SEeaa7-DhJvnU5w" name="GeoLocationAPI"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_l8YKUG2SEeaa7-DhJvnU5w" memberEnd="_l8YxYG2SEeaa7-DhJvnU5w _l8YxY22SEeaa7-DhJvnU5w">
+      <ownedEnd xmi:id="_l8YxYG2SEeaa7-DhJvnU5w" name="src" type="_mq6IcG2LEeaa7-DhJvnU5w" association="_l8YKUG2SEeaa7-DhJvnU5w">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l8YxYm2SEeaa7-DhJvnU5w" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l8YxYW2SEeaa7-DhJvnU5w" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_l8YxY22SEeaa7-DhJvnU5w" name="dst" type="_a9OVIG2SEeaa7-DhJvnU5w" association="_l8YKUG2SEeaa7-DhJvnU5w">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l8ZYcW2SEeaa7-DhJvnU5w" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l8ZYcG2SEeaa7-DhJvnU5w" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3ig6kG2SEeaa7-DhJvnU5w" memberEnd="_3ig6kW2SEeaa7-DhJvnU5w _3ihhom2SEeaa7-DhJvnU5w">
+      <ownedEnd xmi:id="_3ig6kW2SEeaa7-DhJvnU5w" name="src" type="_a9OVIG2SEeaa7-DhJvnU5w" association="_3ig6kG2SEeaa7-DhJvnU5w">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3ihhoW2SEeaa7-DhJvnU5w" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3ihhoG2SEeaa7-DhJvnU5w" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_3ihhom2SEeaa7-DhJvnU5w" name="dst" type="_guoTEG2SEeaa7-DhJvnU5w" association="_3ig6kG2SEeaa7-DhJvnU5w">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3ihhpG2SEeaa7-DhJvnU5w" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3ihho22SEeaa7-DhJvnU5w" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xhCD0G2TEeaa7-DhJvnU5w" name="WifiAdapter"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_zqcnYG2TEeaa7-DhJvnU5w" name="WifiAPI"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3wOxAG2TEeaa7-DhJvnU5w" memberEnd="_3wOxAW2TEeaa7-DhJvnU5w _3wPYEm2TEeaa7-DhJvnU5w">
+      <ownedEnd xmi:id="_3wOxAW2TEeaa7-DhJvnU5w" name="src" type="_mq6IcG2LEeaa7-DhJvnU5w" association="_3wOxAG2TEeaa7-DhJvnU5w">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3wPYEW2TEeaa7-DhJvnU5w" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3wPYEG2TEeaa7-DhJvnU5w" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_3wPYEm2TEeaa7-DhJvnU5w" name="dst" type="_xhCD0G2TEeaa7-DhJvnU5w" association="_3wOxAG2TEeaa7-DhJvnU5w">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3wPYFG2TEeaa7-DhJvnU5w" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3wPYE22TEeaa7-DhJvnU5w" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Fs9xoG2UEeaa7-DhJvnU5w" memberEnd="_Fs9xoW2UEeaa7-DhJvnU5w _Fs-YsG2UEeaa7-DhJvnU5w">
+      <ownedEnd xmi:id="_Fs9xoW2UEeaa7-DhJvnU5w" name="src" type="_xhCD0G2TEeaa7-DhJvnU5w" association="_Fs9xoG2UEeaa7-DhJvnU5w">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Fs9xo22UEeaa7-DhJvnU5w" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Fs9xom2UEeaa7-DhJvnU5w" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_Fs-YsG2UEeaa7-DhJvnU5w" name="dst" type="_zqcnYG2TEeaa7-DhJvnU5w" association="_Fs9xoG2UEeaa7-DhJvnU5w">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Fs-Ysm2UEeaa7-DhJvnU5w" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Fs-YsW2UEeaa7-DhJvnU5w" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <profileApplication xmi:id="_MXj7AG2MEeaa7-DhJvnU5w">
+      <eAnnotations xmi:id="_MXj7AW2MEeaa7-DhJvnU5w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="platform:/plugin/org.cemantika.modeling/profile/cemantika_class.profile.uml#_LD3T4YRKEd-lb5eO5RIlaQ"/>
+      </eAnnotations>
+      <appliedProfile href="platform:/plugin/org.cemantika.modeling/profile/cemantika_class.profile.uml#_C_k1gIQXEd-lb5eO5RIlaQ"/>
+    </profileApplication>
+  </uml:Package>
+  <cemantika_class:ContextualEntity xmi:id="_o61uQG2MEeaa7-DhJvnU5w" base_Class="_mq6IcG2LEeaa7-DhJvnU5w"/>
+  <cemantika_class:ContextualElement xmi:id="_qBEWgG2MEeaa7-DhJvnU5w" base_Property="_cnK9MG2MEeaa7-DhJvnU5w" type="where"/>
+  <cemantika_class:ContextualElement xmi:id="_rC_GgG2MEeaa7-DhJvnU5w" base_Association="_Oc1lcG2MEeaa7-DhJvnU5w" type="where"/>
+  <cemantika_class:ContextSource xmi:id="_uEh9MG2SEeaa7-DhJvnU5w" base_Class="_a9OVIG2SEeaa7-DhJvnU5w"/>
+  <cemantika_class:ContextSourceAPI xmi:id="_u5VeQG2SEeaa7-DhJvnU5w" base_Class="_guoTEG2SEeaa7-DhJvnU5w">
+    <sensors>GPS</sensors>
+  </cemantika_class:ContextSourceAPI>
+  <cemantika_class:AcquisitionAssociation xmi:id="_Ah86wG2TEeaa7-DhJvnU5w" base_Association="_l8YKUG2SEeaa7-DhJvnU5w" updateFrequency="Often" element="_rC_GgG2MEeaa7-DhJvnU5w"/>
+  <cemantika_class:ContextSource xmi:id="_AORUUG2UEeaa7-DhJvnU5w" base_Class="_xhCD0G2TEeaa7-DhJvnU5w"/>
+  <cemantika_class:AcquisitionAssociation xmi:id="_BiLMMG2UEeaa7-DhJvnU5w" base_Association="_3wOxAG2TEeaa7-DhJvnU5w" updateFrequency="Often" element="_qBEWgG2MEeaa7-DhJvnU5w"/>
+  <cemantika_class:ContextSourceAPI xmi:id="_G9oIQG2UEeaa7-DhJvnU5w" base_Class="_zqcnYG2TEeaa7-DhJvnU5w">
+    <sensors>WiFi</sensors>
+  </cemantika_class:ContextSourceAPI>
+</xmi:XMI>
